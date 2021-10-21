@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Noto Sans Mono", monospace;
+  background: #ffd1df;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,4 +12,124 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
+}
+.container {
+  background: #d1fff1;
+  padding: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+.container-video-data {
+  background: #d1fff1;
+  display: none;
+  padding: 20px;
+  margin-top: 100px;
+  width: 400px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+.container-video-data .data .thumbnail img {
+  width: 100%;
+}
+.container-video-data .data .info {
+  margin-top: 10px;
+}
+.container-video-data .data .info h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.container-video-data .data .info a {
+  font-size: 13px;
+  color: #555;
+}
+.container-video-data .controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.container-video-data .controls select,
+.container-video-data .controls button {
+  width: 48%;
+  height: 40px;
+}
+.container-video-data .controls button {
+  color: #111;
+  background: transparent;
+  cursor: pointer;
+}
+
+.link {
+  width: 80%;
+  padding: 5px;
+}
+/* CSS */
+.link-button {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 28px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+
+.link-button:hover {
+  background: #f6f9fe;
+  color: #174ea6;
+}
+
+.link-button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.link-button:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+.link-button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+}
+
+.link-button:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+.link-button:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
+    rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
+}
+
+.link-button:disabled {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
