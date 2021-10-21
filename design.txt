@@ -1,0 +1,8 @@
+/// YOUTUBE MEDIA DOWNLOADER ///
+I want to seperate this into multiple parts.
+1. Container w/ a header asking for you to input the link 
+2. Input below that that will take in the link information
+3. A button to the right of the Input to start downloading. 
+
+When the link is downloading I want the above things to disappear and for there to be a preview of the video as well as a progress bar of the download commencing. 
+I think thats about everything I want to add with this. 
